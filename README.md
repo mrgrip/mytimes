@@ -1,0 +1,1 @@
+This is a project developed from Code Academy's Freelance Web Development course, focused on Display, Positioning and Flexbox.
