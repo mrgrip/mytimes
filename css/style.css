@@ -49,10 +49,23 @@ nav span a {
 
 
 /* PAGE CONTENT */
+p {
+  	font-size: 17px;
+  	color: black;
+}
+
 .main {
+	font-family: Georgia;
 	display: flex;
 	justify-content: space-between;
 	margin-top: 30px;
+}
+
+.headline {
+  	font-weight: bold;
+  	font-size: 30px;
+	color: white;
+	text-align: center;
 }
 
 .column.large {
@@ -60,9 +73,34 @@ nav span a {
 
 }
 
+#mainstory {
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+	/*background-size: contain;*/
+	display: flex;
+	height: 294px;
+  	font-weight: bold;
+  	font-size: 40px;
+  	color: white;
+}
+
+#fall {
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+	height: 300px;
+}
+
+#camera {
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+	height: 300px;
+}
+
 .column.medium {
   	width: 300px;
 
+}
+
+#cats {
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+	height: 300px;
 }
 
 .column.small {
