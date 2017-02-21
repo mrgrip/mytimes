@@ -17,7 +17,7 @@ header {
 }
 
 div {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 
 .logo {
@@ -48,7 +48,7 @@ nav span a {
 }
 
 
-/* PAGE CONTENT */
+/* MAIN PAGE CONTENT */
 p {
   	font-size: 17px;
   	color: black;
@@ -61,16 +61,11 @@ p {
 	margin-top: 30px;
 }
 
-.headline {
-  	font-weight: bold;
-  	font-size: 30px;
-	color: white;
-	text-align: center;
-}
-
 .column.large {
   	width: 630px;
-
+  	display: flex;
+  	justify-content: space-between;
+  	flex-wrap: wrap;
 }
 
 #mainstory {
@@ -83,6 +78,23 @@ p {
   	color: white;
 }
 
+.articles {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.articles > div{
+	width: 47.5%;
+}
+
+.headline {
+  	font-weight: bold;
+  	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+
 #fall {
 	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
 	height: 300px;
@@ -90,6 +102,7 @@ p {
 
 #camera {
 	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+	background-repeat: none;
 	height: 300px;
 }
 
@@ -105,5 +118,65 @@ p {
 
 .column.small {
   	width: 240px;
+  	display: flex;
+  	flex-direction: column;
+}
 
+.column.small h3 {
+	font-size: 16px;
+  	font-weight: bold;
+  	padding-bottom: 30px; 
+  	text-align: center;
+}
+
+.column.small p {
+	background-color: whitesmoke;
+  	font-family: Verdana;
+  	font-size: 12px;
+  	color: dimgray;
+  	border-bottom: 1px solid black;
+  	margin: 0; 
+  	padding: 15px;
+}
+
+/* FOOTER */
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: mediumaquamarine;
+  	margin: auto;
+  	padding: 100px;
+}
+
+footer:nth-child(2n) {
+	page-break-after: always;
+}
+
+.footertitle {
+	font-family: Georgia;
+  	font-size: 16px;
+  	font-weight: bold;
+  	color: white;
+}
+
+.i {
+	font-weight: normal;
+}
+
+footer span {
+	/*display: inline-block;*/
+	font-family: Verdana;
+  	font-size: 12px;
+	padding: 10px;
+}
+
+footer span a {
+	color: black;
+}
+
+.copyright {
+	/*width: 100%;*/
 }
