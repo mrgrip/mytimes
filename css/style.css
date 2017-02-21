@@ -1,5 +1,5 @@
 body {
-
+	margin: 0 auto;
 }
 
 /* HEADER LOGO NAV */
@@ -11,19 +11,12 @@ header {
   	border-bottom: 1px solid black;
   	padding: 10px;
 	display: flex;
-	/*justify-content: space-around;*/
   	align-items: center;
-  	/*flex-direction: row;*/
-}
-
-div {
-	/*border: 1px solid black;*/
 }
 
 .logo {
 	color: mediumaquamarine;
 	display: flex;
-	/*justify-content: space-between;*/
 	flex-grow: 1;
 	padding-left: 10px;
 }
@@ -34,8 +27,6 @@ div {
 
 nav {
 	padding-right: 20px;
-	/*display: flex;*/
-	/*justify-content: flex-end;*/
 }
 
 nav span {
@@ -57,8 +48,10 @@ p {
 .main {
 	font-family: Georgia;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-top: 30px;
+	margin-bottom: 50px;
+	width: 100%;
 }
 
 .column.large {
@@ -70,12 +63,13 @@ p {
 
 #mainstory {
 	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
-	/*background-size: contain;*/
 	display: flex;
+	align-items: center;
 	height: 294px;
   	font-weight: bold;
   	font-size: 40px;
   	color: white;
+  	padding-left: 25px;
 }
 
 .articles {
@@ -89,10 +83,12 @@ p {
 }
 
 .headline {
+	display: flex;
   	font-weight: bold;
   	font-size: 30px;
 	color: white;
 	text-align: center;
+	align-items: center;
 }
 
 #fall {
@@ -108,7 +104,18 @@ p {
 
 .column.medium {
   	width: 300px;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: flex-start;
+}
 
+h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.column.medium h2 {
+	margin-top: 0;
 }
 
 #cats {
@@ -148,11 +155,8 @@ footer {
 	flex-wrap: wrap;
 	background-color: mediumaquamarine;
   	margin: auto;
-  	padding: 100px;
-}
-
-footer:nth-child(2n) {
-	page-break-after: always;
+  	height: 325px;
+  	width: 100%;
 }
 
 .footertitle {
@@ -167,7 +171,6 @@ footer:nth-child(2n) {
 }
 
 footer span {
-	/*display: inline-block;*/
 	font-family: Verdana;
   	font-size: 12px;
 	padding: 10px;
@@ -175,8 +178,4 @@ footer span {
 
 footer span a {
 	color: black;
-}
-
-.copyright {
-	/*width: 100%;*/
 }
