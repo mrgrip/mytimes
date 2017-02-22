@@ -5,19 +5,22 @@ body {
 /* HEADER LOGO NAV */
 
 header {
+	background-color: white;
+  	border-bottom: 1px solid black;
+	display: flex;
+  	align-items: center;
 	font-family: Verdana;
   	font-size: 14px;
   	font-weight: bold;
-  	border-bottom: 1px solid black;
+  	position: fixed;
   	padding: 10px;
-	display: flex;
-  	align-items: center;
+  	width: 100%;
 }
 
 .logo {
 	color: mediumaquamarine;
 	display: flex;
-	flex-grow: 1;
+	margin-right: auto;
 	padding-left: 10px;
 }
 
@@ -49,7 +52,7 @@ p {
 	font-family: Georgia;
 	display: flex;
 	justify-content: space-around;
-	margin-top: 30px;
+	padding-top: 100px;
 	margin-bottom: 50px;
 	width: 100%;
 }
@@ -153,6 +156,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	flex-direction: column;
 	background-color: mediumaquamarine;
   	margin: auto;
   	height: 325px;
